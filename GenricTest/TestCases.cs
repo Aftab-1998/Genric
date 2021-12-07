@@ -19,5 +19,16 @@ namespace GenricTest
             Assert.AreEqual(expected,result);
 
         }
+        public void GivenMaxInSecond_WhenPrintMaxValue_ThenShouldGiveSecondValue()
+        {
+
+            int[] intArray = { 2, 9, 1, 4 };
+            int expected = intArray[1];
+            GenricMaximum<int> generic = new GenricMaximum<int>();
+            int result = generic.PrintMaxValue(intArray);
+
+            Assert.AreEqual(expected, result);
+
+        }
     }
 }
