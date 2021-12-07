@@ -62,5 +62,16 @@ namespace GenricTest
 
             Assert.AreEqual(expected, result);
         }
+
+        public void GivenMaxStringThird_WhenPrintMaxValue_ThenShouldGiveThirdValue()
+        {
+
+            string[] stringArray = { "Appale", "peach", "Banana" };
+            string expected = stringArray[2];
+            GenricMaximum<string> generic = new GenricMaximum<string>();
+            string result = generic.PrintMaxValue(stringArray);
+
+            Assert.AreEqual(expected, result);
+        }
     }
 }
