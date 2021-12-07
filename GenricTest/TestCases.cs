@@ -5,7 +5,7 @@ namespace GenricTest
 {
     public class TestCases
     {
-       
+
 
         [Test]
         public void GivenMaxInFirst_WhenPrintMaxValue_ThenShouldGiveFirstValue()
@@ -15,8 +15,8 @@ namespace GenricTest
             int expected = intArray[0];
             GenricMaximum<int> generic = new GenricMaximum<int>();
             int result = generic.PrintMaxValue(intArray);
-           
-            Assert.AreEqual(expected,result);
+
+            Assert.AreEqual(expected, result);
 
         }
         public void GivenMaxInSecond_WhenPrintMaxValue_ThenShouldGiveSecondValue()
@@ -40,6 +40,16 @@ namespace GenricTest
 
             Assert.AreEqual(expected, result);
 
+        }
+        public void GivenMaxdoubleFirst_WhenPrintMaxValue_ThenShouldGiveFirstValue()
+        {
+
+            double[] doubleArray = { 9.9, 2.2, 1.1, 4.4 };
+            double expected = doubleArray[0];
+            GenricMaximum<double> generic = new GenricMaximum<double>();
+            double result = generic.PrintMaxValue(doubleArray);
+
+            Assert.AreEqual(expected, result);
         }
     }
 }
