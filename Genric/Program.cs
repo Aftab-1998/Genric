@@ -9,8 +9,14 @@ class program
         int[] intArray = { 1, 2, 9,4 };
         GenricMaximum<int> generic = new GenricMaximum<int>();        
         generic.PrintMaxValue(intArray);
-        
-            
+
+        double[] doubleArray = { 1.1, 1.2, 1.3 };
+        GenricMaximum<double> genericDouble = new GenricMaximum<double>();
+        genericDouble.PrintMaxValue(doubleArray);
+
+
+
+
 
 
     }
