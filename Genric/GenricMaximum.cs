@@ -25,10 +25,11 @@ namespace Genric
             return sorted_value[sorted_value.Length-1];
         }
 
-        public void PrintMaxValue(T[] value)
+        public T PrintMaxValue(T[] value)
         {
             var max = MaxValue(value);
             Console.WriteLine("Maximum value is" + max);
+            return max;
         }
     }
 
