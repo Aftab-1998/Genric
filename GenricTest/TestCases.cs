@@ -8,7 +8,7 @@ namespace GenricTest
        
 
         [Test]
-        public void GivenMaxInFirst_WhenPrintMaxValue_ThenShouldGiveFirstValue()
+        public void GivenMaxIntFirst_WhenPrintMaxValue_ThenShouldGiveFirstValue()
         {
 
             int[] intArray = { 9, 2, 1, 4 };
@@ -19,9 +19,9 @@ namespace GenricTest
             Assert.AreEqual(expected,result);
 
         }
-        public void GivenMaxInSecond_WhenPrintMaxValue_ThenShouldGiveSecondValue()
+        public void GivenMaxIntSecond_WhenPrintMaxValue_ThenShouldGiveSecondValue()
         {
-
+             
             int[] intArray = { 2, 9, 1, 4 };
             int expected = intArray[1];
             GenricMaximum<int> generic = new GenricMaximum<int>();
@@ -30,7 +30,7 @@ namespace GenricTest
             Assert.AreEqual(expected, result);
 
         }
-        public void GivenMaxInThird_WhenPrintMaxValue_ThenShouldGiveThirdValue()
+        public void GivenMaxIntThird_WhenPrintMaxValue_ThenShouldGiveThirdValue()
         {
 
             int[] intArray = { 1, 2, 9, 4 };
@@ -40,6 +40,16 @@ namespace GenricTest
 
             Assert.AreEqual(expected, result);
 
+        }
+        public void GivenMaxStringFirst_WhenPrintMaxValue_ThenShouldGiveFirstValue()
+        {
+
+            string[] stringArray = { "999", "222", "111", "444" };
+            string expected = stringArray[0];
+            GenricMaximum<string> generic = new GenricMaximum<string>();
+            string result = generic.PrintMaxValue(stringArray);
+
+            Assert.AreEqual(expected, result);
         }
     }
 }
