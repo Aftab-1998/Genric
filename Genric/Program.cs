@@ -15,6 +15,12 @@ class program
         genericDouble.PrintMaxValue(doubleArray);
 
 
+        string[] stringArray = { "111", "222", "333" };
+        GenricMaximum<string> genericString = new GenricMaximum<string>();
+        genericString.PrintMaxValue(stringArray);
+
+
+
 
 
 
