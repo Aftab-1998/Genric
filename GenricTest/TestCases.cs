@@ -95,5 +95,16 @@ namespace GenricTest
 
             Assert.AreEqual(expected, result);
         }
+        public void GivenMaxdoubleThird_WhenPrintMaxValue_ThenShouldGiveThirdValue()
+        {
+
+            double[] doubleArray = { 2.2, 1.1, 9.9, 4.4 };
+            double expected = doubleArray[2];
+            GenricMaximum<double> generic = new GenricMaximum<double>();
+            double result = generic.PrintMaxValue(doubleArray);
+
+
+            Assert.AreEqual(expected, result);
+        }
     }
 }
